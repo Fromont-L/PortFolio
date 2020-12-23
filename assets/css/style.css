@@ -1,1 +1,121 @@
-style.css
+@charset "UTF-8";
+
+@font-face {
+	font-family: myFirstFont;
+	src: url("../font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+}
+
+#font {
+	font-family: myFirstFont;
+}
+
+body {
+	background: linear-gradient(#0D8FD160, #2129C260, #431CAD60, #800FD160)
+}
+
+/*Couleurs navigation et footer*/
+.bg {
+	background: #0D8FD1;
+}
+
+/*Cartes cachées*/
+
+/*
+#c1 {
+	display: none;
+}
+
+#c2 {
+	display: none;
+}
+
+#c3 {
+	display: none;
+}
+
+#c4 {
+	display: none;
+}
+
+#c5 {
+	display: none;
+}
+
+#c6 {
+	display: none;
+}
+
+#c7 {
+	display: none;
+}
+
+#c8 {
+	display: none;
+}
+
+#c9 {
+	display: none;
+}
+*/
+
+/*Tous les textes*/
+
+li {
+	list-style: none;
+}
+
+.dd {
+	text-align: center;
+	list-style: none;
+}
+
+.diapotitle {
+	font-size: 1.7rem;
+}
+
+.diapotext {
+	font-size: 1rem;
+	font-color: gray;
+}
+
+.sectiontitle {
+	font-size: 2.3rem;
+	word-spacing: 0.1rem;
+	letter-spacing: 0.05rem;
+	text-decoration: underline;
+}
+
+.sectiontext {
+	font-size: 1.1rem;
+	word-spacing: 0.05rem;
+	letter-spacing: 0.01rem;
+}
+
+.modal-title {
+
+}
+
+.modal-text {
+
+}
+
+.guidetext {
+	font-size: 2rem;
+	color: solid white;
+}
+
+a {
+	color: #0D8FD1;
+}
+
+a:hover {
+	color: #800FD1;
+}
+
+/*Fin des modifications des textes*/
+
+footer {
+	height: 100px;
+	width: 100%;
+}
+
