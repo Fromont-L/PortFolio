@@ -1,34 +1,109 @@
-let togg0 = document.getElementById("togg0")
-let togg1 = document.getElementById("togg1")
-let togg2 = document.getElementById("togg2")
-let togg3 = document.getElementById("togg3")
-let togg4 = document.getElementById("togg4")
+let togg0 = document.getElementById("togg0");
+let togg1 = document.getElementById("togg1");
+let togg2 = document.getElementById("togg2");
+let togg3 = document.getElementById("togg3");
+let togg4 = document.getElementById("togg4");
+let togg5 = document.getElementById("togg5");
 
-let d0 = document.getElementById("d0")
-let d1 = document.getElementById("d1")
-let d2 = document.getElementById("d2")
-let d3 = document.getElementById("d3")
-let d4 = document.getElementById("d4")
+// Cache toutes les cartes travaux
+function hideAll(){
+	let cards = document.getElementsByClassName("travaux");
 
-let c1 = document.getElementById("c1")
-let c2 = document.getElementById("c2")
-let c3 = document.getElementById("c3")
-let c4 = document.getElementById("c4")
-let c5 = document.getElementById("c5")
-let c6 = document.getElementById("c6")
-let c7 = document.getElementById("c7")
-let c8 = document.getElementById("c8")
-let c9 = document.getElementById("c9")
+	Array.from(cards).forEach(function(card) {
+		card.style.visibility = "collapse";
+	});
+}
 
+// Affiche les cartes concernées
+function showClass(className) {
+	hideAll();
+	let cards = document.getElementsByClassName(className);
+
+	Array.from(cards).forEach(function(card) {
+		card.style.visibility = "visible";
+	});
+}
+
+//bouton "Afficher tout"
+togg0.addEventListener("click", () => {
+	showClass("travaux");
+});
+
+//bouton "HTML"
+togg1.addEventListener("click", () => {
+	showClass("travaux html");
+});
+
+//bouton "CSS"
+togg2.addEventListener("click", () => {
+	showClass("travaux css");
+});
+
+//bouton "JS"
+togg3.addEventListener("click", () => {
+	showClass("travaux js");
+});
+
+//bonton "PHP"
+togg4.addEventListener("click", () => {
+	showClass("travaux php");
+});
+
+/* A VENIR
+//bouton "WordPress"
+togg5.addEventListener("click", () => {
+	showClass("travaux wordpress");
+});
+*/
+
+/*
+togg0.addEventListener("click", () => {
+	if (c1.style.display != "none"){
+		c1.style.display = "block"; 
+	} else {
+		c1.style.display = "flex";
+	}
+})*/
+/*
+//Exemple pour selectionner les classes
+
+let htmlSelect = document.getElementsByClassName("html")[0];
+let cssSelect = document.getElementsByClassName("css")[0];
+let jsSelect = document.getElementsByClassName("js")[0];
+let phpSelect = document.getElementsByClassName("php")[0];
+let allSelect = document.getElementsByClassName("all")[0];
+*/
+
+/*
+
+//Test pour cacher tout ce qui n'est pas de la classe HTML
+
+togg1.addEventListener('click', function() {
+	c1.style.display = "block"
+	c2.style.display = "block"
+	c3.style.display = "none"
+	c4.style.display = "block"
+	c5.style.display = "block"
+	c6.style.display = "none"
+	c7.style.display = "none"
+	c8.style.display = "block"
+	c9.style.display = "block"
+});
+*/
+
+/*
 function show(object){
 	if(document.getElementById)
 	document.getElementById(object).style.display = "block";
 }
+
 function hide(object){
 	if(document.getElementById)
-	document.getElementById(object).style.dipslay = "none";
+	document.getElementById(object).style.display = "none";
 }
+*/
 
+/*
 togg0.addEventListener("click", () => {
 	if(getComputedStyle(d0).display != "none"){
 		d0.style.display = "none"; 
@@ -68,7 +143,9 @@ togg4.addEventListener("click", () => {
 		d4.style.display = "block";
 	}
 })
+*/
 
+/*
 function toggle_div(bouton, id) {
         //on récupère ta div à "toggler"
     var div = document.getElementById(id),
@@ -88,3 +165,5 @@ function toggle_div(bouton, id) {
     if(previousState=="none") {
         div.style.display = "block";
     }
+}
+*/
