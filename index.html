@@ -33,7 +33,7 @@
 						</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html#contact"><strong class="fontnav">Contact</strong>
+						<a class="nav-link" href="contact.html"><strong class="fontnav">Contact</strong>
 						</a>
 					</li>
 					<li class="nav-item active">
@@ -171,7 +171,7 @@
 						<div class="card border-light">
 							<div class="card-body">
 								<em class="card-title">Mes projets</em>
-								<p class="card-text">Mes projets pour l'instant manquent d'ambition, mais pour je compte réussir mon année et obtenir le diplôme de développeur web/web mobile.<br/><br/>
+								<p class="card-text">Mes projets pour l'instant manquent d'ambition, mais je compte réussir mon année et obtenir le diplôme de développeur web/web mobile.<br/><br/>
 								Une fois ce but accompli je me tournerai vers un travail en rapport avec developpeur web, ou continuer les études dans ce domaine pour me spécialiser pour ainsi devenir auto-entrepreneur à l'avenir.</p>
 								</ul>
 							</div>
@@ -193,11 +193,13 @@
 						   <button type="button" class="btn dropdown-toggle"
 						data-toggle="dropdown">Que voir en premier ? <span class="caret"></span></button>
 						   <ul class="dropdown-menu" role="menu"> 
-						      <li class="dd"><button id="togg1" type="button" class="btn btn-primary" onClick="show('d1'); hide('d1')">HTML</button></li>
-						      <li class="dd"><button id="togg2" type="button" class="btn btn-primary" onClick="show('d2'); hide('d2')">CSS</button></li>
-						      <li class="dd"><button id="togg3" type="button" class="btn btn-primary" onClick="show('d3'); hide('d3')">JavaScript</button></li>
-						      <li class="dd"><button id="togg4" type="button" class="btn btn-primary" onClick="show('d4'); hide('d4')">PHP</button></li>
-						      <li class="dd"><button id="togg0" type="button" class="btn btn-primary" onClick="show('d0'); hide('d0')">Tout voir</button></li> 
+						      <li class="dd"><button id="togg1" type="button" class="btn btn-primary">HTML</button></li>
+						      <li class="dd"><button id="togg2" type="button" class="btn btn-primary">CSS</button></li>
+						      <li class="dd"><button id="togg3" type="button" class="btn btn-primary">JavaScript</button></li>
+						      <li class="dd"><button id="togg4" type="button" class="btn btn-primary">PHP</button></li>
+						      <!--<li class="dd"><button id="togg5" type="button" class="btn btn-primary">WordPress</button></li>-->
+						      <li class="dd"><button id="togg0" type="button" class="btn btn-primary">Tout voir</button></li>
+
 						   </ul> 
 						</div>
 					</div>
@@ -205,8 +207,8 @@
 			</div>
 			<div class="row">
 				<!--Première carte : CV-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c1" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux html css">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°1 : CV</em>
@@ -238,8 +240,8 @@
 				</div>
 				<!--Fin première carte : CV-->
 				<!--Deuxième carte : Jeu des escargots-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c2" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux html css js">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°2 : Jeu de l'escargot</em>
@@ -273,8 +275,8 @@
 				</div>
 				<!--Fin deuxième carte : jeu de l'escargot-->
 				<!--Troisième carte : Espace sécurisé-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c3" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux php">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°3 : Espace Sécurisé</em>
@@ -290,7 +292,7 @@
 											<div class="modal-header">
 												<div class="modal-body">
 												<em class="modal-title">Mon troisième travail : Espace sécurisé</em>
-												<p class="modal-text">Pour ce troisième projet nous avons eu à faire au PHP, et nous devions stocker notre site en local sur notre ordinateur. Là encore une fois nous avions carte blanche pour l'affichage de nos pages, j'ai évidemment choisi une banque pour faire en sorte que ça paraisse très professionnel alors qu'une fois inscrit on découvre que c'est de moins en moins sérieux. Tout de même j'ai quand même pris la peine de crypter les mots de passes, qui eux étaient stockés dans un fichier .json. Ainsi les pages sont liées grâce à du code PHP qui s'active et qui change selon nos réponses : si elles sont valides, si elles sont valides, si elles sont déjà existantes ect.</p>
+												<p class="modal-text">Pour ce troisième projet nous avons eu à faire au PHP, et nous devions stocker notre site en local sur notre ordinateur. Là encore une fois nous avions carte blanche pour l'affichage de nos pages, j'ai évidemment choisi une banque pour faire en sorte que ça paraisse très professionnel alors qu'une fois inscrit on découvre que c'est de moins en moins sérieux. Tout de même j'ai quand même pris la peine de crypter les mots de passes, qui eux étaient stockés dans un fichier .json. Ainsi les pages sont liées grâce à du code PHP qui s'active et qui change selon nos réponses : si elles sont valides, si elles sont déjà existantes ect.</p>
 												<button id="dlcv" type="button"></button>
 												<button class="close" type="button" data-dismiss="modal">
 												<span>&times;</span>
@@ -308,8 +310,8 @@
 			</div>
 			<div class="row">
 				<!--Quatrième carte : Escales-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c4" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux html css js">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°4 : Escales</em>
@@ -325,7 +327,7 @@
 											<div class="modal-header">
 												<div class="modal-body">
 												<em class="modal-title">Le quatrième travail : Escales</em>
-												<p class="modal-text">Le projet le plus gros et le plus long que nous ayons pu faire. Presque deux semaines pour rendre un site vitrine pour une agence de voyage, nous l'avons réalisés grâce à mes collègues. Chacun à son poste nous avons su faire face à des difficultés telles que le cahier des chartes pour notre client (nos formateurs), j'ai du me battre avec Git pour ne pas avoir d'erreurs, mais avec notre sang froid et notre détermination, nous avons rendu un magnifique site responsive et surtout qui donne envie, malgré le stress et les clients difficiles (c'est faux).</p>
+												<p class="modal-text">Le projet le plus gros et le plus long que nous ayons pu faire. Presque deux semaines pour rendre un site vitrine pour une agence de voyage, nous l'avons réalisés grâce à mes collègues. Chacun à son poste nous avons su faire face à des difficultés telles que le cahier des chartes pour notre client (nos formateurs), j'ai du me battre avec Git pour ne pas avoir d'erreurs, mais avec notre sang froid et notre détermination, nous avons rendu un magnifique site responsive et surtout qui donne envie, malgré le stress et les clients difficiles.</p>
 												<button id="dlcv" type="button"></button>
 												<button class="close" type="button" data-dismiss="modal">
 												<span>&times;</span>
@@ -341,8 +343,8 @@
 				</div>
 				<!--Fin quatrième carte : Escales-->
 				<!--Cinquième carte : Picollino-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c5" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux html css">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°5 : Picollino</em>
@@ -358,7 +360,7 @@
 											<div class="modal-header">
 												<div class="modal-body">
 												<em class="modal-title">Mon cinquième travail : Picollino</em>
-												<p class="modal-text">Un brief proposé par nos formateurs, le but était d'apprendre à utiliser Bootstrap pour construire un site web 100% responsive à la Twitter et Netflix. Et ça m'a pris du temps, malgré la documentation bien fournie et la nouvelle version ( Bootstrap 5 en beta). Il suffisait de reproduire à l'identique une page vitrine d'une entreprise d'ameublement d'une famille Italienne. Avec quelques <del>heures</del> jours d'apprentisages sur cet outil, il permet de faire des merveilles avec sons sytème à 12 colonnes.</p>
+												<p class="modal-text">Un brief proposé par nos formateurs, le but était d'apprendre à utiliser Bootstrap pour construire un site web 100% responsive à la Twitter et Netflix. Et ça m'a pris du temps, malgré la documentation bien fournie et la nouvelle version ( Bootstrap 5 en beta). Il suffisait de reproduire à l'identique une page vitrine d'une entreprise d'ameublement d'une famille Italienne. Avec quelques <del>heures</del> jours d'apprentisages sur cet outil, il permet de faire des merveilles avec son système à 12 colonnes.</p>
 												<button id="dlcv" type="button"></button>
 												<button class="close" type="button" data-dismiss="modal">
 												<span>&times;</span>
@@ -374,8 +376,8 @@
 				</div>
 				<!--Fin cinquième carte : Picollino-->
 				<!--Sixième carte : DOM-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c6" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux js">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°6 : DOM</em>
@@ -409,8 +411,8 @@
 			</div>
 			<div class="row">
 				<!--Septième carte : Mon Panier Frais-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c7" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux js">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°7 : Mon Panier Frais</em>
@@ -442,15 +444,15 @@
 				</div>
 				<!--Fin septième carte : Mon Panier Frais-->
 				<!--Huitième carte : KKF ?-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c8" class="card mb-5 ">
+				<div class="col-md-4 col-sm-12 travaux html css">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°8 : KKF</em>
 							</div>
 							<div class="card-body">
 								<img class="card-img-top" src="assets/images/kkf/kkf.png" alt="Comment qu'on fait ?"/>
-								<p class="card-text">Koment Kon Fé ? (Comment pourrions-nous faire ?) Le brief que je n'ai jamais rendu, ou du moins pas encore, </p>
+								<p class="card-text">KomenKonFé ? (Comment pourrions-nous faire ?) Le brief que je n'ai jamais rendu, ou du moins pas encore, </p>
 								<button type="button" data-toggle="modal" data-target="#more7" class="btn">Voir plus</button>
 								<div id="more7" class="modal">
 									<div class="modal-dialog modal-lg">
@@ -475,8 +477,8 @@
 				</div>
 				<!--Fin huitième carte : KKf-->
 				<!--Neuvième carte : PortFolio-->
-				<div class="col-md-4 col-sm-12">
-					<div id="c9" class="card mb-5">
+				<div class="col-md-4 col-sm-12 travaux html css js">
+					<div class="card mb-5">
 						<div class="card border-light">
 							<div class="card-header">
 								<em class="worktitle">N°9 : PortFolio</em>
@@ -563,7 +565,7 @@
 				<div class="col">
 					<p class="contactext">Adresse mail : <a href="mailto:lucasfromont97@gmail.com">lucasfromont97@gmail.com</a></p>
 					<p class="contactext">Numéro de téléphone : <a href="tel:0622581780">06 22 58 17 80</a></p>
-					<p class="contactext">Adresse pour m'envoyer des pizzas : (laissez tomber pas il n'y a pas de livraison dans mon village)</p>
+					<p class="contactext">Adresse très célèbre : Thézan-des-Corbières, 5 Impasse de la Source, 11200 </p>
 				</div>
 			</div>
 		</div>
@@ -600,6 +602,6 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-		<script href="assets/js/script.js"></script>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>
